@@ -15,7 +15,7 @@ export default function Home() {
 
   const fetchTodos = async () => {
     const response = await axios('/api');
-    setTodoData(response.data.todos)
+    setTodoData(response.data.todos);
   }
 
   const deleteTodos = async (id) => {
